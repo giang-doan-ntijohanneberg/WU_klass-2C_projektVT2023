@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Mainstay;
+    src: url(Fonts/Mainstay.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    grid-area: na;
+}
+
