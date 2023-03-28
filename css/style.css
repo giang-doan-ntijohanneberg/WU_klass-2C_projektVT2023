@@ -9,12 +9,15 @@
     src: url(Fonts/Mainstay.ttf);
 }
 
+#logo{
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
-    background-color: antiquewhite;
+    background-color: blanchedalmond;
     grid-area: na;
 }
 
@@ -24,7 +27,7 @@ nav {
     width: 200px;
     position: absolute;
     top: -400px;
-    right: 0px;
+    right: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -32,6 +35,7 @@ nav {
     list-style: none;
     transition: all 0.5s;
     border-radius: 10%;
+    filter: opacity(80%);
 }
 
 #nav_links a{
@@ -39,7 +43,7 @@ nav {
     letter-spacing: 0,1875rem;
     color: rgb(71, 43, 5);
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-transform: uppercase;
     padding: 20px;
     border-radius: 5%;
@@ -62,8 +66,85 @@ nav {
 .tryck_menu #rose_menu_icon{
     transform: rotate(180deg);
     transition: all 1.5s;
+}
 
 #grid_wrapper {
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows: 100px 100px 400px 400px 400px 400px 80px;
+    grid-template-areas: 
+    "na na"
+    "he he"
+    "s1 s1"
+    "s2 s2"
+    "s3 s3"
+    "s4 s4"
+    "fo fo";
+}
+
+header {
+    grid-area: he;
+}
+
+#section_1{
+    grid-area: s1;
+}
+
+#section_2{
+    grid-area: s2;
+}
+
+#section_3{
+    grid-area: s3;
+}
+
+#section_4{
+    grid-area: s4;
+}
+
+footer{
+    grid-area: fo
+}
+
+@media screen and (min-width: 700px) {
+
+    #menu_icon{
+        display: none;
+    }
+
+    #grid_wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 40px 400px 400px 100px;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "s1 s2"
+        "s3 s4"
+        "fo fo";
+    }
+
+    #nav_links {
+        height: 70px;
+        width: 100%;
+        top: 0px;
+        flex-direction: row;
+        transition: none;
+        border-radius: 0%;
+    }
+
+    nav{
+        background-color: white;
+    }
+
+    header{
+        background-color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo{
+        display: inline;
+        height: ;
+    }
 }
