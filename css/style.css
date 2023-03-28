@@ -9,28 +9,61 @@
     src: url(Fonts/Mainstay.ttf);
 }
 
-ul{
-    list-style: none;
-    text-decoration: none;
-}
-
-#link_list{
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-}
-
-#logo{
-    width: 150px;
-    height: auto;
-}
-
-#grid_wrapper{
-    background-color:blanchedalmond;
     height: 100px;
+    background-color: antiquewhite;
+    grid-area: na;
 }
 
-.menu{
-    padding: 90px;
-    padding-top: 0px;
+#nav_links {
+    background-color: burlywood;
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    top: -400px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    transition: all 0.5s;
+    border-radius: 10%;
+}
+
+#nav_links a{
+    text-decoration: none;
+    letter-spacing: 0,1875rem;
+    color: rgb(71, 43, 5);
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+#nav_links a:hover{
+    background-color: brown;
+    color: bisque;
+}
+
+#menu_icon {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav_active {
+    transform: translateY(500px);
+}
+
+.tryck_menu #rose_menu_icon{
+    transform: rotate(180deg);
+    transition: all 1.5s;
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: ;
 }
