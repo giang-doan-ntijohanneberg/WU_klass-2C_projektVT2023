@@ -1,19 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: Mainstay;
     src: url(Fonts/Mainstay.ttf);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ul{
+    list-style: none;
+    text-decoration: none;
 }
 
-nav {
+#link_list{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    height: 100px;
-    grid-area: na;
 }
 
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+#grid_wrapper{
+    background-color:blanchedalmond;
+    height: 100px;
+}
+
+.menu{
+    padding: 90px;
+    padding-top: 0px;
+}
