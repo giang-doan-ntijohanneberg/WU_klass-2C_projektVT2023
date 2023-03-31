@@ -23,6 +23,7 @@
     "fo fo";
 }
 
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -67,7 +68,6 @@ nav {
 #nav_links a:hover{
     background-color: brown;
     color: bisque;
-    
 }
 
 #menu_icon {
@@ -83,7 +83,7 @@ nav {
     transform: rotate(360deg);
     transition: all 1.5s;
 }
-
+/*-----------------nav---------------------------*/
 
 
 header {
@@ -112,10 +112,6 @@ footer{
 
 @media screen and (min-width: 700px) {
 
-    #menu_icon{
-        display: none;
-    }
-
     #grid_wrapper {
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 70px 40px 480px 300px 300px 100px;
@@ -126,6 +122,10 @@ footer{
         "s3 s2"
         "s4 s2"
         "fo fo";
+    }
+
+    #menu_icon{
+        display: none;
     }
 
     #nav_links {
@@ -153,18 +153,6 @@ footer{
 
     #logo{
         display: inline;
-    }
-
-    .border_line{
-        border: 2px solid black;
-        width: 100%;
-        height: 0px;
-    }
-
-    #border_line_2{
-        border: 2px solid black;
-        width: 100%;
-        height: 0px;
     }
 
     #section_1{
