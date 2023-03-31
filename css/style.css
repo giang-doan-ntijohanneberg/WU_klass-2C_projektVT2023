@@ -9,8 +9,18 @@
     src: url(Fonts/Mainstay.ttf);
 }
 
-#logo{
-    display: none;
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows: 100px 40px 400px 400px 400px 400px 80px;
+    grid-template-areas: 
+    "na na"
+    "he he"
+    "s1 s1"
+    "s2 s2"
+    "s3 s3"
+    "s4 s4"
+    "fo fo";
 }
 
 nav {
@@ -19,6 +29,10 @@ nav {
     align-items: center;
     background-color: blanchedalmond;
     grid-area: na;
+}
+
+#logo{
+    display: none;
 }
 
 #nav_links {
@@ -36,6 +50,7 @@ nav {
     transition: all 0.5s;
     border-radius: 10%;
     filter: opacity(80%);
+    z-index: 1;
 }
 
 #nav_links a{
@@ -52,6 +67,7 @@ nav {
 #nav_links a:hover{
     background-color: brown;
     color: bisque;
+    
 }
 
 #menu_icon {
@@ -64,23 +80,11 @@ nav {
 }
 
 .tryck_menu #rose_menu_icon{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     transition: all 1.5s;
 }
 
-#grid_wrapper {
-    display: grid;
-    grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 100px 400px 400px 400px 400px 80px;
-    grid-template-areas: 
-    "na na"
-    "he he"
-    "s1 s1"
-    "s2 s2"
-    "s3 s3"
-    "s4 s4"
-    "fo fo";
-}
+
 
 header {
     grid-area: he;
@@ -113,13 +117,14 @@ footer{
     }
 
     #grid_wrapper {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70px 40px 400px 400px 100px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 70px 40px 480px 300px 300px 100px;
         grid-template-areas: 
         "na na"
         "he he"
         "s1 s2"
-        "s3 s4"
+        "s3 s2"
+        "s4 s2"
         "fo fo";
     }
 
@@ -130,6 +135,7 @@ footer{
         flex-direction: row;
         transition: none;
         border-radius: 0%;
+        z-index: 0;
     }
 
     nav{
@@ -141,10 +147,38 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
     }
 
     #logo{
         display: inline;
-        height: ;
+    }
+
+    .border_line{
+        border: 2px solid black;
+        width: 100%;
+        height: 0px;
+    }
+
+    #border_line_2{
+        border: 2px solid black;
+        width: 100%;
+        height: 0px;
+    }
+
+    #section_1{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #section_2{
+        padding: 10px;
+        border-left: 2px solid black;
+    }
+
+    article{
+        border-bottom: 1px solid black;
     }
 }
