@@ -7,3 +7,5 @@ function toggleMenu() {
 }
 
 menu_icon.addEventListener('click', toggleMenu)
+
+

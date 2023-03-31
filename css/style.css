@@ -12,14 +12,14 @@
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 40px 400px 400px 400px 400px 80px;
+    grid-template-rows: 80px 40px 420px 400px 400px 400px 80px;
     grid-template-areas: 
     "na na"
     "he he"
+    "ma ma"
+    "as as"
     "s1 s1"
     "s2 s2"
-    "s3 s3"
-    "s4 s4"
     "fo fo";
 }
 
@@ -83,11 +83,18 @@ nav {
     transform: rotate(360deg);
     transition: all 1.5s;
 }
-/*-----------------nav---------------------------*/
 
 
 header {
     grid-area: he;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    grid-area: as;
 }
 
 #section_1{
@@ -98,29 +105,80 @@ header {
     grid-area: s2;
 }
 
-#section_3{
-    grid-area: s3;
-}
-
-#section_4{
-    grid-area: s4;
-}
-
 footer{
     grid-area: fo
 }
 
+main{
+    grid-area: ma;
+    display: flex;
+    justify-content: center; 
+    align-items: ;
+    border-bottom: 1px solid black;
+    margin: 0 20px 0px 20px;
+}
+
+article{
+    padding: 30px 20px 20px 10px;
+}
+
+#img_test{
+    background-color: bisque;
+    width: 100%;
+    height: 85%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#wordbox_1{
+    font-size: 3rem;
+}
+
+#wordbox_2{
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+#wordbox_3{
+    margin-bottom: 5px;
+}
+
+#div_button ul{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    list-style: none;
+}
+
+#div_button a{
+    padding: 15px 20px 15px 20px;
+    margin-right: 20px;
+    border: 2px solid black;
+    width: 100px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: black 2px 2px;
+    color: black;
+}
+
+#div_button a:hover{
+    background-color: burlywood;
+    color: black;
+}
+
+
+
 @media screen and (min-width: 700px) {
 
     #grid_wrapper {
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 70px 40px 480px 300px 300px 100px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 70px 40px 440px 300px 300px 100px;
         grid-template-areas: 
         "na na"
         "he he"
-        "s1 s2"
-        "s3 s2"
-        "s4 s2"
+        "ma as"
+        "s1 as"
+        "s2 as"
         "fo fo";
     }
 
@@ -155,18 +213,44 @@ footer{
         display: inline;
     }
 
-    #section_1{
-        padding: 20px;
-        display: flex;
-        justify-content: center;
+    main{
+        padding-top: 15px;
     }
 
-    #section_2{
+    aside{
         padding: 10px;
         border-left: 2px solid black;
     }
 
-    article{
-        border-bottom: 1px solid black;
+    #section_1{
+        padding: 20px 20px 20px 20px;
+        background-color:;
     }
+
+    #section1_titel{
+        word-spacing: 0.5rem;
+        text-align: center;
+        color: blanchedalmond;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
+
+    #new_arrivals_content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .new_arrivals{
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+   
+}
+
+footer{
+    border-top: 2px solid black;
 }
