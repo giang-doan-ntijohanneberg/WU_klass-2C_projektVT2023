@@ -12,7 +12,7 @@
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 80px 40px 420px 400px 400px 400px 80px;
+    grid-template-rows: 80px 40px 420px 400px 650px 500px 80px;
     grid-template-areas: 
     "na na"
     "he he"
@@ -166,13 +166,84 @@ article{
     color: black;
 }
 
+#section_1{
+    padding: 20px 20px 20px 20px;
+    border-bottom: 2px solid black;
+}
+
+#section1_titel{
+    word-spacing: 0.5rem;
+    text-align: center;
+    color: rgb(85, 53, 6);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.new_arrivals_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.new_arrivals{
+    margin: 15px 10px 15px 10px;
+}
+
+.img_newarrivals{
+    height: 170px;
+    width: 180px;
+    background-color: bisque;
+    border-radius: 40px 40px 0 0;
+}
+
+.price_newarrivals{
+    padding: 8px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+}
+
+.description_newarrivals{
+    text-align: center;
+    font-weight: bold;
+}
+
+#shop_all{
+    padding: 10px;
+    background-color: rgb(223, 211, 196);
+    color: rgb(152, 93, 17);
+    border-color: rgb(223, 211, 196);
+    margin-left: 185px;
+    border-radius: 7px;
+}
+
+
+footer{
+    border-top: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 700px) {
 
     #grid_wrapper {
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 70px 40px 440px 300px 300px 100px;
+        grid-template-rows: 70px 40px 450px 420px 300px 100px;
         grid-template-areas: 
         "na na"
         "he he"
@@ -222,35 +293,23 @@ article{
         border-left: 2px solid black;
     }
 
-    #section_1{
-        padding: 20px 20px 20px 20px;
-        background-color:;
-    }
-
-    #section1_titel{
-        word-spacing: 0.5rem;
-        text-align: center;
-        color: blanchedalmond;
-        text-transform: capitalize;
-        font-size: 1.5rem;
-    }
-
-    #new_arrivals_content{
+    .new_arrivals_content{
         display: flex;
-        justify-content: space-around;
+        flex-wrap: nowrap;
+        justify-content: center;
         align-items: center;
-        margin-top: 20px;
     }
 
-    .new_arrivals{
-        width: 150px;
-        height: 150px;
-        border: 1px solid black;
+    #shop_all{
+        padding: 10px;
+        background-color: rgb(223, 211, 196);
+        color: rgb(152, 93, 17);
+        border-color: rgb(223, 211, 196);
+        margin-left: 370px;
+        border-radius: 7px;
     }
 
-   
+
+
 }
 
-footer{
-    border-top: 2px solid black;
-}
