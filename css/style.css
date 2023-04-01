@@ -269,6 +269,10 @@ aside{
 
 #section_2{
     margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #section2_container{
@@ -276,6 +280,7 @@ aside{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .workshop_img{
@@ -489,6 +494,14 @@ footer{
         margin-top: 20px;
     }
 
+    #section_2{
+        align-items: flex-start;
+    }
+
+    #section2_container{
+        margin-top: 0;
+    }
+
     aside{
         padding: 10px;
         border-left: 2px solid black;
@@ -537,8 +550,71 @@ footer{
         font-size: 1.125rem;
     }
 
+    /*spring collection page*/
+
+    #grid_wrapper_collection{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 70px 40px 450px 420px 300px 340px;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "asc mas"
+        "asc sec1"
+        "asc sec2"
+        "fo fo";
+    }
+
+    #aside_collection_page{
+        grid-area: asc;
+        border-right: 1px solid black;
+        border-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .season{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    .img_season{
+        width: 180px;
+        height: 180px;
+        background-color: rgb(235, 199, 154);
+        margin: 20px;
+        border-radius: 100px;
+    }
+
+    .button_season{
+        width: 100px;
+        margin-bottom: 5px;
+        border-radius: 20px;
+        
+    }
 
 
+    #main_collection_spring{
+        grid-area: mas;
+    }
+
+    #section1_collection{
+        grid-area: sec1;
+    }
+
+    #section2_collection{
+        grid-area: sec2;
+    }
+
+
+
+    /*end spring collection page*/
 
 
 
