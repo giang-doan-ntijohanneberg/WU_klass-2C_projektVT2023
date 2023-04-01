@@ -12,7 +12,7 @@
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 80px 40px 420px 400px 650px 500px 80px;
+    grid-template-rows: 80px 40px 420px 950px 650px 800px 80px;
     grid-template-areas: 
     "na na"
     "he he"
@@ -33,6 +33,10 @@ nav {
 }
 
 #logo{
+    display: none;
+}
+
+#shop_name{
     display: none;
 }
 
@@ -123,11 +127,7 @@ article{
 }
 
 #img_test{
-    background-color: bisque;
-    width: 100%;
-    height: 85%;
-    margin-right: 20px;
-    margin-top: 20px;
+    display: none;
 }
 
 #wordbox_1{
@@ -167,7 +167,7 @@ article{
 }
 
 #section_1{
-    padding: 20px 20px 20px 20px;
+    padding: 5px 20px 20px 20px;
     border-bottom: 2px solid black;
 }
 
@@ -196,7 +196,7 @@ article{
     height: 170px;
     width: 180px;
     background-color: bisque;
-    border-radius: 40px 40px 0 0;
+    border-radius: 10px;
 }
 
 .price_newarrivals{
@@ -221,10 +221,180 @@ article{
     border-radius: 7px;
 }
 
+aside{
+    margin: 20px 0px 20px 0px;
+    border-bottom: 2px solid black;
+}
+
+.newspaper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+    border-bottom: 1px solid black;
+    margin: 0 20px 0 20px;
+}
+
+.news_topic{
+    font-weight: bolder;
+}
+
+.news_title{
+    font-size: 1.7rem;
+    padding: 10px 0 10px 0;
+}
+
+.writer{
+    font-style: italic;
+}
+
+.news_title a{
+    text-decoration: none;
+    color: gold;
+}
+
+.news_title a:hover{
+    color: rgb(96, 86, 30);
+}
+
+#aside_title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#section_2{
+    margin: 15px;
+}
+
+#section2_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.workshop_img{
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    margin: 20px;
+    border-radius: 100px 100px 0 0;
+}
+
+
 
 footer{
     border-top: 2px solid black;
 }
+#grid_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 170px 170px;
+    grid-template-areas:
+    'so co li'
+    'su su su';
+    margin: 10px;
+}
+
+#social_media{
+    grid-area: so;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#social_media h2{
+    font-size: 1rem;
+}
+
+.socialmedia_logo{
+    padding-top: 10px;
+}
+
+#contact{
+    grid-area: co;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#contact h3{
+    padding-bottom: 5px;
+}
+
+#contact p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#quick_links{
+    grid-area: li;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#quick_links h3{
+    font-size: 1rem;
+}
+
+#subcribe{
+    grid-area: su;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#subcribe_box{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px;
+}
+
+#subcribe_box p{
+    padding-left: 20px;
+    font-style: italic;
+}
+
+#email_icon{
+    width: 25px;
+    height: 25px;
+}
+
+#subcribe h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -242,8 +412,8 @@ footer{
 @media screen and (min-width: 700px) {
 
     #grid_wrapper {
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 70px 40px 450px 420px 300px 100px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 70px 40px 450px 420px 300px 340px;
         grid-template-areas: 
         "na na"
         "he he"
@@ -253,8 +423,22 @@ footer{
         "fo fo";
     }
 
+    #img_test{
+        display: inline;
+        background-color: bisque;
+        width: 100%;
+        height: 85%;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
     #menu_icon{
         display: none;
+    }
+
+    #shop_name{
+        display: inline;
+        font-size: 2rem;
     }
 
     #nav_links {
@@ -288,9 +472,17 @@ footer{
         padding-top: 15px;
     }
 
+    #section_1{
+        margin-top: 20px;
+    }
+
     aside{
         padding: 10px;
         border-left: 2px solid black;
+    }
+
+    .new_arrivals{
+        margin-bottom: 28px;
     }
 
     .new_arrivals_content{
@@ -301,15 +493,126 @@ footer{
     }
 
     #shop_all{
+        margin-left: 420px;
+    }
+
+    aside{
+        border-bottom: 0;
+    }
+
+    .news_title{
+        font-size: 1.5rem;
+    }
+
+    .newspaper{
+        margin-top: 10px;
+    }
+
+    #grid_footer{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: 170px 170px;
+        grid-template-areas:
+        'so co li'
+        'su su su';
+        margin: 10px;
+    }
+
+    #social_media{
+        grid-area: so;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #social_media h2{
+        font-size: 2rem;
+    }
+
+    .socialmedia_logo{
+        padding-top: 10px;
+    }
+
+    #contact{
+        grid-area: co;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         padding: 10px;
-        background-color: rgb(223, 211, 196);
-        color: rgb(152, 93, 17);
-        border-color: rgb(223, 211, 196);
-        margin-left: 370px;
-        border-radius: 7px;
+        margin: 10px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    #contact h3{
+        font-size: 1rem;
+    }
+
+    #quick_links{
+        grid-area: li;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #quick_links h3{
+        font-size: 1rem;
+    }
+
+    #subcribe{
+        grid-area: su;
+        border-top: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #subcribe_box{
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        padding: 15px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 2px 2px;
+    }
+    
+    #subcribe_box p{
+        padding-left: 20px;
+        font-style: italic;
+    }
+
+    #email_icon{
+        width: 25px;
+        height: 25px;
+    }
+
+    #subcribe h4{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: lighter;
+        padding-top: 15px;
     }
 
 
 
-}
 
+
+
+
+
+
+
+
+}
