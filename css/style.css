@@ -26,10 +26,14 @@
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     background-color: blanchedalmond;
     grid-area: na;
+}
+
+nav h1{
+    padding-left: 20px;
 }
 
 #logo{
@@ -45,7 +49,7 @@ nav {
     height: 400px;
     width: 200px;
     position: absolute;
-    top: -400px;
+    top: -420px;
     right: 0%;
     display: flex;
     flex-direction: column;
@@ -91,10 +95,11 @@ nav {
 
 header {
     grid-area: he;
-    background-color: coral;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 aside{
@@ -349,6 +354,10 @@ footer{
     font-size: 1rem;
 }
 
+#quick_links a{
+    text-decoration: none;
+}
+
 #subcribe{
     grid-area: su;
     border-top: 1px solid black;
@@ -441,6 +450,10 @@ footer{
         font-size: 2rem;
     }
 
+    nav h1{
+        display: none;
+    }
+
     #nav_links {
         height: 70px;
         width: 100%;
@@ -508,102 +521,22 @@ footer{
         margin-top: 10px;
     }
 
-    #grid_footer{
-        display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr;
-        grid-template-rows: 170px 170px;
-        grid-template-areas:
-        'so co li'
-        'su su su';
-        margin: 10px;
-    }
-
-    #social_media{
-        grid-area: so;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        text-align: center;
-    }
-
     #social_media h2{
         font-size: 2rem;
     }
 
-    .socialmedia_logo{
-        padding-top: 10px;
-    }
-
-    #contact{
-        grid-area: co;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        margin: 10px;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-    }
-
     #contact h3{
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 
-    #quick_links{
-        grid-area: li;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        margin: 10px;
+    #contact p{
+        font-size: 1rem;
     }
 
     #quick_links h3{
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 
-    #subcribe{
-        grid-area: su;
-        border-top: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #subcribe_box{
-        width: 200px;
-        height: 50px;
-        text-align: center;
-        padding: 15px;
-        margin-top: 10px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        border: 2px solid black;
-        border-radius: 20px;
-        box-shadow: 2px 2px;
-    }
-    
-    #subcribe_box p{
-        padding-left: 20px;
-        font-style: italic;
-    }
-
-    #email_icon{
-        width: 25px;
-        height: 25px;
-    }
-
-    #subcribe h4{
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: lighter;
-        padding-top: 15px;
-    }
 
 
 
