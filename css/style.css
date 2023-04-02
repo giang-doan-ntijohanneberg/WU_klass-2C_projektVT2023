@@ -12,7 +12,7 @@
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 80px 40px 420px 950px 650px 800px 80px;
+    grid-template-rows: 70px 40px 420px 950px 650px 800px 80px;
     grid-template-areas: 
     "na na"
     "he he"
@@ -49,7 +49,7 @@ nav h1{
     height: 400px;
     width: 200px;
     position: absolute;
-    top: -420px;
+    top: -430px;
     right: 0%;
     display: flex;
     flex-direction: column;
@@ -639,12 +639,190 @@ footer{
 
     /*----------end spring collection page---------*/
 
+    /*gallery page*/
+
+    #grid_wrapper_gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 40px 850px 340px;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "mag mag"
+        "fo fo";
+    }
+    
+    .main_gallery{
+        grid-area: mag;
+    }
+    
+    .box_gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img_gallery a img{
+        width: 130px;
+        height: 200px;
+        filter: grayscale(1);
+        border-radius: 100px 100px 0 0;
+    }
+    
+    .img_gallery a:hover img{
+        filter: grayscale(0);
+    }
+    
+    .text_gallery{
+        max-width: 200px;
+        margin: 10px;
+        text-align: center;
+        font-size: 13px;
+        font-style: oblique;
+    }
+    .gallery span{
+        font-weight: bolder;
+        font-size: 30px;
+    }
 
 
+    /*-----------end gallery page----------------*/
 
+    #grid_wrapper_about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 40px 400px 280px 300px 670px 340px;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "seca1 seca1"
+        "seca2 seca2"
+        "seca3 seca3"
+        "seca4 seca4"
+        "fo fo";
+    }
+    
+    #section1_about{
+        grid-area: seca1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    #section1_about span{
+        margin: 20px;
+        font-weight: 900;
+    }
+    
+    #text_section1{
+        padding: 20px;
+    }
+    
+    
+    #text_section1 h1{
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    #text_section1 p{
+        font-style: italic;
+    }
+    
+    
+    #section2_about{
+        grid-area: seca2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #section2_about img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    #section3_about{
+        grid-area: seca3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #section3_about img{
+        width: 55%;
+        height: 70%;
+        margin: 20px 0 20px 0;
+    }
+    
+    #text_section3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 
-
-
+    #text_section3 p{
+        text-align: center;
+    }
+    
+    #text_section3 img{
+        height: 20px;
+        width: 20px;
+    }
+    
+    #left-quote{
+        position: relative;
+        bottom: 40px;
+    }
+    
+    #right-quote{
+        position: relative;
+        top: 40px;
+    }
+    
+    #section4_about{
+        grid-area: seca4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    
+    #team_members{
+        width: 40%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #team_members img{
+        height: 150px;
+    }
+    
+    #team_info{
+        width: 45%;
+    }
+    
+    #team_info h1{
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+    
+    #team_info p{
+         margin-top: 20px;
+    }
+    
 
 
 
@@ -877,6 +1055,7 @@ footer{
   /*---------gallery page------------*/
 
 
+/*---------about us page------------*/
 #grid_wrapper_gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -888,53 +1067,109 @@ footer{
     "fo fo";
 }
 
-.main_gallery{
-    grid-area: mag;
-}
-
 .box_gallery{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 .gallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 40px;
-}
-
-.text_gallery{
-    max-width: 200px;
-    margin: 10px;
-    text-align: center;
-    font-size: 13px;
-}
-
-.img_gallery{
-    width: 220px;
-    height: 350px;
 }
 
 .img_gallery a img{
     width: 220px;
     height: 350px;
-    filter: grayscale(1);
-}
-
-.img_gallery a:hover img{
-    filter: grayscale(0);
-}
-
-
-.gallery span{
-    font-weight: bolder;
-    font-size: 30px;
 }
 
 /*---------end gallery page------------*/
+
+#grid_wrapper_about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 40px 350px 400px 300px 600px 340px;
+    grid-template-areas: 
+    "na na"
+    "he he"
+    "seca1 seca1"
+    "seca2 seca2"
+    "seca3 seca3"
+    "seca4 seca4"
+    "fo fo";
+}
+
+#section1_about{
+    grid-area: seca1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#section1_about span{
+    font-weight: 900;
+    position: relative;
+    top: 10px;
+}
+
+#text_section1{
+    width: 65%;
+}
+
+#text_section1 h1{
+    font-size: 3rem;
+}
+
+#section2_about img{
+    height: 90%;
+    width: 100%;
+    padding: 20px;
+}
+
+#section3_about img{
+    margin: 20px 70px 20px 20px;
+    width: 40%;
+    height: 90%;
+}
+
+#text_section3{
+    display: flex;
+    height: auto;    
+    width: 50%;
+    margin: 60px 60px 60px 80px;
+    font-size: 1.5rem;
+}
+
+#text_section3 img{
+    height: 25px;
+    width: 25px;
+}
+
+#left-quote{
+    position: relative;
+    bottom: 60px;
+    left: 40px;
+}
+
+#right-quote{
+    position: relative;
+    top: 70px;
+}
+
+
+#team_members img{
+    height: 250px;
+    margin: 15px;
+}
+
+
+
+
+
+/*---------end about us page------------*/
+
+
+
+
 
 }
     
