@@ -8,6 +8,7 @@
     padding: 0;
 }
 
+/*--------------INDEX MOBIL--------------*/
 
 #grid_wrapper {
     display: grid;
@@ -22,24 +23,12 @@
     "s2 s2"
     "fo fo";
 }
-
-
+        /*--------------NAV MOBIL--------------*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     grid-area: na;
-}
-
-nav h1{
-    font-size: 2rem;
-    padding-left: 10px;
-    text-transform: capitalize;
-    font-family: 'Playfair Display', serif;
-}
-
-#shop_name{
-    display: none;
 }
 
 #nav_links {
@@ -76,13 +65,20 @@ nav h1{
     color: white
 }
 
+nav h1{
+    font-size: 2rem;
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+}
+
+#shop_name{
+    display: none;
+}
+
 #menu_icon {
     margin-right: 20px;
     cursor: pointer;
-}
-
-.nav_active {
-    transform: translateY(500px);
 }
 
 .tryck_menu #rose_menu_icon{
@@ -90,6 +86,10 @@ nav h1{
     transition: all 1.5s;
 }
 
+.nav_active {
+    transform: translateY(500px);
+}
+        /*--------------END NAV MOBIL--------------*/
 
 header {
     grid-area: he;
@@ -102,22 +102,11 @@ header {
     font-size: 1rem;
 }
 
-aside{
-    grid-area: as;
+header p{
+    right: 0px;
 }
 
-#section_1{
-    grid-area: s1;
-}
-
-#section_2{
-    grid-area: s2;
-}
-
-footer{
-    grid-area: fo
-}
-
+        /*--------------MAIN MOBIL--------------*/
 main{
     grid-area: ma;
     display: flex;
@@ -169,8 +158,56 @@ article{
     background-color: gray;
     color: black;
 }
+        /*--------------END MAIN MOBIL--------------*/
 
+
+        /*--------------END ASIDE MOBIL--------------*/
+aside{
+    grid-area: as;
+    margin: 20px 0px 20px 0px;
+    border-bottom: 2px solid black;
+}
+
+#aside_title{
+    font-size: 2rem;
+    text-align: center;
+}
+.newspaper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+    border-bottom: 1px solid black;
+    margin: 0 20px 0 20px;
+}
+
+.news_topic{
+    font-weight: bolder;
+}
+
+.news_title{
+    font-size: 1.7rem;
+    padding: 10px 0 10px 0;
+}
+
+.news_title a{
+    text-decoration: none;
+    color: rgb(43, 41, 41);
+}
+
+.news_title a:hover{
+    color: brown;
+}
+
+.writer{
+    font-style: italic;
+}
+        /*--------------END ASIDE MOBIL--------------*/
+
+
+        /*--------------SECTION 1 MOBIL--------------*/
 #section_1{
+    grid-area: s1;
     padding: 5px 20px 20px 20px;
     border-bottom: 2px solid black;
 }
@@ -224,49 +261,11 @@ article{
     margin-left: 185px;
     border-radius: 7px;
 }
+        /*--------------END SECTION 1 MOBIL--------------*/
 
-aside{
-    margin: 20px 0px 20px 0px;
-    border-bottom: 2px solid black;
-}
-
-.newspaper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px 0 20px 0;
-    border-bottom: 1px solid black;
-    margin: 0 20px 0 20px;
-}
-
-.news_topic{
-    font-weight: bolder;
-}
-
-.news_title{
-    font-size: 1.7rem;
-    padding: 10px 0 10px 0;
-}
-
-.writer{
-    font-style: italic;
-}
-
-.news_title a{
-    text-decoration: none;
-    color: rgb(43, 41, 41);
-}
-
-.news_title a:hover{
-    color: brown;
-}
-
-#aside_title{
-    font-size: 2rem;
-    text-align: center;
-}
-
+        /*--------------SECTION 2 MOBIL--------------*/
 #section_2{
+    grid-area: s2;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -289,12 +288,15 @@ aside{
     margin: 20px;
     border-radius: 100px 100px 0 0;
 }
+        /*--------------END SECTION 2 MOBIL--------------*/
 
 
-
+        /*--------------FOOTER MOBIL--------------*/
 footer{
+    grid-area: fo;
     border-top: 2px solid black;
 }
+
 #grid_footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -381,6 +383,12 @@ footer{
     align-items: center;
 }
 
+#subcribe h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    padding-top: 15px;
+}
+
 #subcribe_box{
     width: 200px;
     height: 50px;
@@ -395,25 +403,23 @@ footer{
     box-shadow: 2px 2px;
 }
 
-#subcribe_box p{
-    padding-left: 20px;
-    font-style: italic;
-}
-
 #email_icon{
     width: 25px;
     height: 25px;
 }
 
-#subcribe h4{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
-    padding-top: 15px;
+#subcribe_box p{
+    padding-left: 20px;
+    font-style: italic;
 }
+        /*-------------- END FOOTER MOBIL--------------*/
 
-/*--------------SPRING COLLECTION--------------*/
 
-    /*spring collection page*/
+/*--------------END INDEX MOBIL--------------*/
+
+
+
+/*-------------- COLLECTION MOBIL --------------*/
   #grid_wrapper_collection{
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 300px;
@@ -428,7 +434,7 @@ footer{
     "fo fo";
 }
 
-
+    /*--------------ASIDE COLLECTION MOBIL--------------*/
 #aside_collection_page{
     grid-area: asc;
     position: relative;
@@ -483,8 +489,10 @@ footer{
     background-color: rgb(25, 15, 3);
     color: antiquewhite;
 }
+    /*-------------- END ASIDE COLLECTION MOBIL --------------*/
 
 
+    /*--------------MAIN COLLECTION MOBIL--------------*/
 .main_collection{
     grid-area: mas;
     display: flex;
@@ -495,8 +503,6 @@ footer{
 #main_collection_spring{
     background-image: url("../img/mainbackgroundspring.png");
 }
-
-
 
 #main_collection_summer{
     background-image: url("../img/mainbackgroundsummer.png");
@@ -511,8 +517,6 @@ footer{
 #main_collection_winter{
     background-image: url("../img/mainbackgroundwinter.png");
 }
-
-
 
 #text_main_spring{
     width: 200px;
@@ -546,7 +550,10 @@ footer{
 #img_main_summer_2{
     display: none;
 }
+    /*--------------END MAIN COLLECTION MOBIL--------------*/
 
+
+    /*--------------SECTION 1 COLLECTION MOBIL--------------*/
 #section1_collection{
     grid-area: sec1;
     display: flex;
@@ -588,10 +595,10 @@ footer{
     font-style: italic;
     padding-left: 10px;
 }
+    /*--------------END SECTION 1 COLLECTION MOBIL--------------*/
 
 
-/*------------product slider-----------------------*/
-
+    /*--------------SECTION 2 COLLECTION MOBIL--------------*/
 #section2_collection{
     grid-area: sec2;
     position: relative;
@@ -659,12 +666,12 @@ footer{
     font-weight: 900;
     font-size: 20px;
 }
+    /*--------------END SECTION 2 COLLECTION MOBIL--------------*/
+
+/*--------------END COLLECTION MOBIL--------------*/
 
 
-    /*----------end spring collection page---------*/
-
-    /*gallery page*/
-
+/*--------------GALLERY MOBIL--------------*/
     #grid_wrapper_gallery{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -716,10 +723,10 @@ footer{
         font-weight: bolder;
         font-size: 30px;
     }
+/*--------------END GALLERY MOBIL--------------*/
 
 
-    /*-----------end gallery page----------------*/
-
+/*--------------ABOUT MOBIL--------------*/
     #grid_wrapper_about{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -734,6 +741,7 @@ footer{
         "fo fo";
     }
     
+    /*--------------SECTION 1 ABOUT MOBIL--------------*/
     #section1_about{
         grid-area: seca1;
         display: flex;
@@ -751,7 +759,6 @@ footer{
         padding: 20px;
     }
     
-    
     #text_section1 h1{
         font-size: 2.5rem;
         margin-bottom: 15px;
@@ -760,7 +767,7 @@ footer{
     #text_section1 p{
         font-style: italic;
     }
-    
+    /*-------------- END SECTION 1 ABOUT MOBIL--------------*/
     
     #section2_about{
         grid-area: seca2;
@@ -774,6 +781,7 @@ footer{
         width: 100%;
     }
     
+    /*--------------SECTION 3 ABOUT MOBIL--------------*/
     #section3_about{
         grid-area: seca3;
         display: flex;
@@ -812,7 +820,9 @@ footer{
         position: relative;
         top: 40px;
     }
-    
+    /*--------------END SECTION 3 ABOUT MOBIL--------------*/
+
+    /*--------------SECTION 4 ABOUT MOBIL--------------*/
     #section4_about{
         grid-area: seca4;
         display: flex;
@@ -846,13 +856,9 @@ footer{
     #team_info p{
          margin-top: 20px;
     }
-    
+    /*--------------END SECTION 4 ABOUT MOBIL--------------*/
 
-
-
-
-
-
+/*--------------END ABOUT MOBIL--------------*/
 
 
 
@@ -864,7 +870,7 @@ footer{
 @media screen and (min-width: 700px) {
 
 
-    /*index page*/
+/*--------------INDEX DESKTOP--------------*/
     #grid_wrapper {
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 70px 40px 450px 420px 300px 340px;
@@ -885,6 +891,31 @@ footer{
         flex-direction: row;
         transition: none;
         border-radius: 0%;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    #shop_name{
+        display: inline;
+        font-size: 2rem;
+    }
+
+    #menu_icon{
+        display: none;
+    }
+
+    header{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    header p{
+        position: relative;
+        right: 15px;
+    }
+
+    main{
+        padding-top: 15px;
     }
 
     #img_test{
@@ -895,47 +926,22 @@ footer{
         margin: 20px;
     }
 
-    #menu_icon{
-        display: none;
+    aside{
+        padding: 10px;
+        border-left: 2px solid black;
+        border-bottom: 0;
     }
 
-    #shop_name{
-        display: inline;
-        font-size: 2rem;
+    .news_title{
+        font-size: 1.5rem;
     }
 
-
-    header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 1px solid black;
-        border-bottom: 2px solid black;
-    }
-
-    #logo{
-        display: inline;
-    }
-
-    main{
-        padding-top: 15px;
+    .newspaper{
+        margin-top: 10px;
     }
 
     #section_1{
         margin-top: 20px;
-    }
-
-    #section_2{
-        align-items: flex-start;
-    }
-
-    #section2_container{
-        margin-top: 0;
-    }
-
-    aside{
-        padding: 10px;
-        border-left: 2px solid black;
     }
 
     .new_arrivals{
@@ -953,16 +959,12 @@ footer{
         margin-left: 420px;
     }
 
-    aside{
-        border-bottom: 0;
+    #section_2{
+        align-items: flex-start;
     }
 
-    .news_title{
-        font-size: 1.5rem;
-    }
-
-    .newspaper{
-        margin-top: 10px;
+    #section2_container{
+        margin-top: 0;
     }
 
     #social_media h2{
@@ -980,11 +982,10 @@ footer{
     #quick_links h3{
         font-size: 1.125rem;
     }
+/*-------------- END INDEX DESKTOP --------------*/
 
-    /*end index page*/
 
-    /*spring collection page*/
-
+/*-------------- COLLECTION DESKTOP--------------*/
     #grid_wrapper_collection{
         display: grid;
         grid-template-columns: 1fr 5fr;
@@ -998,6 +999,7 @@ footer{
         "fo fo";
     }
 
+    /*--------------ASIDE COLLECTION MOBIL--------------*/
     #aside_collection_page{
         grid-area: asc;
         border-right: 1px solid black;
@@ -1016,12 +1018,10 @@ footer{
     .season_card{
         padding: 20px;
     }
+    /*--------------END ASIDE COLLECTION DESKTOP--------------*/
 
 
-    #section1_collection{
-        padding-top: 40px;
-    }
-
+    /*--------------MAIN COLLECTION DESKTOP--------------*/
     .main_collection{
         justify-content: space-between;
     }
@@ -1062,7 +1062,6 @@ footer{
         padding-top: 20px;
     }
     
-
     #img_main_spring_1{
         display: inline;
         background-color:antiquewhite;
@@ -1095,6 +1094,15 @@ footer{
         width: 350px;
         border-radius: 59% 41% 67% 33% / 45% 84% 16% 55% ;
     }
+    /*--------------END MAIN COLLECTION DESKTOP--------------*/
+
+
+    /*--------------SECTION 1 COLLECTION DESKTOP--------------*/
+    #section1_collection{
+        padding-top: 40px;
+    }
+    
+
 
     .popular_box{
         padding-bottom: 20px;
@@ -1119,42 +1127,25 @@ footer{
     .pris_popular{
         padding-left: 20px;
     }
-  
+    /*--------------END SECTION 1 COLLECTION DESKTOP--------------*/
 
-    /*------------product slider-----------------------*/
-
+    
+    /*--------------SECTION 2 COLLECTION DESKTOP--------------*/
     #section2_collection{
         padding: 35px 20px 20px 0px;
     }
+    /*--------------END SECTION 2 COLLECTION DESKTOP--------------*/
 
-    .product_card{
-        flex: 0 0 auto;
-        width: 250px;
-        height: 430px;
-        margin-right: 40px;
-    }
+/*--------------END COLLECTION DESKTOP--------------*/
 
 
-     /*------------end product slider-----------------------*/
-
-  /*end spring collection page*/
-
-
+/*--------------GALLERY DESKTOP--------------*/
 #grid_wrapper_gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 70px 40px 600px 340px;
-    grid-template-areas: 
-    "na na"
-    "he he"
-    "mag mag"
-    "fo fo";
 }
 
 .box_gallery{
-    display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .gallery{
@@ -1165,28 +1156,17 @@ footer{
     width: 220px;
     height: 350px;
 }
+/*--------------END GALLERY DESKTOP--------------*/
 
-/*---------end gallery page------------*/
 
+/*--------------ABOUT DESKTOP--------------*/
 #grid_wrapper_about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 70px 40px 350px 400px 300px 600px 340px;
-    grid-template-areas: 
-    "na na"
-    "he he"
-    "seca1 seca1"
-    "seca2 seca2"
-    "seca3 seca3"
-    "seca4 seca4"
-    "fo fo";
 }
 
+   /*--------------SECTION 1 ABOUT DESKTOP--------------*/
 #section1_about{
-    grid-area: seca1;
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 #section1_about span{
@@ -1202,6 +1182,7 @@ footer{
 #text_section1 h1{
     font-size: 3rem;
 }
+    /*-------------- END SECTION 1 ABOUT DESKTOP--------------*/
 
 #section2_about img{
     height: 90%;
@@ -1209,6 +1190,8 @@ footer{
     padding: 20px;
 }
 
+
+    /*--------------SECTION 3 ABOUT DESKTOP--------------*/
 #section3_about img{
     margin: 20px 70px 20px 20px;
     width: 40%;
@@ -1216,7 +1199,6 @@ footer{
 }
 
 #text_section3{
-    display: flex;
     height: auto;    
     width: 50%;
     margin: 60px 60px 60px 80px;
@@ -1229,32 +1211,24 @@ footer{
 }
 
 #left-quote{
-    position: relative;
     bottom: 60px;
     left: 40px;
 }
 
 #right-quote{
-    position: relative;
     top: 70px;
 }
+    /*--------------END SECTION 3 ABOUT DESKTOP--------------*/
 
 
+    /*--------------SECTION 4 ABOUT DESKTOP--------------*/
 #team_members img{
     height: 250px;
     margin: 15px;
 }
+   /*--------------END SECTION 4 ABOUT DESKTOP--------------*/
 
-
-
-
-
-/*---------end about us page------------*/
-
-
-
-
-
+/*--------------END ABOUT MOBIL--------------*/
 }
     
 
