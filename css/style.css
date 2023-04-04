@@ -12,7 +12,7 @@
 
 #grid_wrapper {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) 300px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 70px 40px 420px 950px 650px 800px 80px;
     grid-template-areas: 
     "na na"
@@ -421,7 +421,7 @@ footer{
 /*-------------- COLLECTION MOBIL --------------*/
   #grid_wrapper_collection{
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) 300px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 70px 40px 400px 420px 450px 520px 320px;
     grid-template-areas: 
     "na na"
@@ -673,7 +673,7 @@ footer{
 /*--------------GALLERY MOBIL--------------*/
     #grid_wrapper_gallery{
         display: grid;
-        grid-template-columns: minmax(200px, 1fr) 300px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 70px 40px 850px 340px;
         grid-template-areas: 
         "na na"
@@ -728,7 +728,7 @@ footer{
 /*--------------ABOUT MOBIL--------------*/
     #grid_wrapper_about{
         display: grid;
-        grid-template-columns: minmax(200px, 1fr) 300px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 70px 40px 400px 280px 300px 670px 340px;
         grid-template-areas: 
         "na na"
