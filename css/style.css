@@ -13,7 +13,7 @@
 #grid_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 9vh 5vh 54vh 145vh 70vh 60vh 10vh;
+    grid-template-rows: 9vh 5vh 57vh 150vh 85vh 60vh 10vh;
     grid-template-areas: 
     "na na"
     "he he"
@@ -64,12 +64,13 @@ nav {
     color: white
 }
 
-nav h1{
+#shop_name{
     display: none;
 }
 
-nav h2 {
-    display: inline;
+#shop_name_mobil{
+    text-decoration: none;
+    color: black;
     font-size: 2rem;
     padding-left: 10px;
     text-transform: capitalize;
@@ -118,15 +119,15 @@ main{
     margin: 0 20px 0px 20px;
 }
 
-article{
+#index-main-article{
     padding: 30px 20px 20px 10px;
 }
 
-#img_test{
+#img_main{
     display: none;
 }
 
-#wordbox_1{
+#index-main-article h1{
     font-size: 3rem;
 }
 
@@ -214,20 +215,18 @@ aside{
 #section_1{
     grid-area: s1;
     border-bottom: 2px solid black;
-    margin-top: 0px;
-    padding: 5px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 #section1_titel{
     word-spacing: 0.5rem;
     text-align: center;
     color: black;
-    text-transform: capitalize;
-    font-size: 1.25rem;
+    text-transform: lowercase;
 }
 
 .new_arrivals_content{
@@ -235,8 +234,8 @@ aside{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .new_arrivals{
@@ -244,7 +243,7 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px 15px 10px 5px;
+    margin: 20px;
 }
 
 .img_newarrivals{
@@ -286,7 +285,8 @@ aside{
     align-items: center;
 }
 
-#section_2 h2{
+#section2_titel{
+    text-transform: uppercase;
     position: relative;
     top: 10px;
 }
@@ -343,6 +343,7 @@ footer{
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    list-style: none;
 }
 
 .socialmedia_logo img{
@@ -444,7 +445,7 @@ footer{
   #grid_wrapper_collection{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 9vh 5vh 50vh 54vh 58vh 66vh 10vh;
+    grid-template-rows: 9vh 5vh 50vh 54vh 62vh 68vh 10vh;
     grid-template-areas: 
     "na na"
     "he he"
@@ -468,6 +469,7 @@ footer{
 
 #aside_collection_page h2{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .season{
@@ -481,10 +483,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5px;
-    padding: 20px;
-    margin-bottom: 30px; 
-    
+    padding: 15px;
+    margin-bottom: 30px;    
 }
 
 .img_season{
@@ -496,19 +496,18 @@ footer{
 }
 
 .button_season{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-}
-
-.button_season a{
-    width: 150px;
-    height: 50px;
-    padding: 5px 15px 5px 15px;
+    width: 80px;
+    height: 30px;
     border-radius: 20px;
     text-decoration: none;
     color: black;
 }
 
-.button_season a:hover{
+.button_season:hover{
     background-color: rgb(25, 15, 3);
     color: antiquewhite;
 }
@@ -546,7 +545,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 250px;
     margin: 10px;
 }
 
@@ -618,6 +617,7 @@ footer{
 }
 
 .description_popular{
+    font-size: 1rem;
     margin: 5px;
     width: 10vh;
 }
@@ -733,14 +733,14 @@ footer{
         align-items: center;
     }
     
-    .img_gallery a img{
+    .gallery a img{
         width: 17vh;
         height: 26vh;
         filter: grayscale(1);
         border-radius: 100px 100px 0 0;
     }
     
-    .img_gallery a:hover img{
+    .gallery a:hover img{
         filter: grayscale(0);
     }
     
@@ -762,7 +762,7 @@ footer{
     #grid_wrapper_about{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 9vh 5vh 50vh 36vh 40vh 85vh 10vh;
+        grid-template-rows: 9vh 5vh 50vh 36vh 40vh 90vh 10vh;
         grid-template-areas: 
         "na na"
         "he he"
@@ -912,7 +912,7 @@ footer{
 
 #grid_wrapper {
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 70px 40px 450px 420px 300px 340px;
+    grid-template-rows: 70px 40px 450px 460px 300px 340px;
     grid-template-areas: 
     "na na"
     "he he"
@@ -935,15 +935,22 @@ footer{
     transition: 0;
 }
 
-nav h1{
+#nav_links #shop_name{
     display: inline;
     font-size: 2rem;
     padding-left: 10px;
     text-transform: capitalize;
     font-family: 'Playfair Display', serif;
+    border-radius: 0;
+    padding: 0;
 }
 
-nav h2 {
+#nav_links #shop_name:hover{
+    color: black;
+    background-color: white;
+}
+
+#shop_name_mobil{
     display: none;
 }
 
@@ -966,7 +973,7 @@ header {
 
         /*--------------MAIN DESKTOP--------------*/
 
-#img_test{
+#img_main{
     display: inline;
     background-color: antiquewhite;
     width: 100%;
@@ -992,20 +999,27 @@ aside{
     padding-top: 20px;
 }
 
-.new_arrivals_content{
-    flex-wrap: nowrap;
-    padding: 10px;
+#section1_titel{
+    font-size: 1.5rem;
 }
 
-.new_arrivals{
-    margin: 10px 20px 10px 20px;
+.new_arrivals_content{
+    flex-wrap: nowrap;
+}
+
+.img_newarrivals{
+    height: 30vh;
+    width: 30vh;
+}
+
+.description_newarrivals{
+    font-size: 0.8rem;
 }
 
         /*--------------END SECTION 1 DESKTOP--------------*/
 
         /*--------------SECTION 2 DESKTOP--------------*/
 #section_2{
-    grid-area: s2;
     margin-top: 10px;
     margin-left: 20px;
     align-items: flex-start;
@@ -1016,31 +1030,39 @@ aside{
     margin-top: 0px;
 }
 
+#section_2 h2{
+    top: 0;
+}
+
+.workshop_img{
+    width: 32vh;
+    height: 30vh;
+}
+
         /*--------------END SECTION 2 DESKTOP--------------*/
 
 
         /*--------------FOOTER DESKTOP--------------*/
-footer{
-    grid-area: fo;
-    border-top: 2px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 170px 170px;
-    grid-template-areas:
-    'so co li'
-    'su su su';
-}
 
 #social_media a{
     font-size: 2rem;
 }
 
+.socialmedia_logo img{
+    width: 6vh;
+    height: 6vh;
+}
+
 #contact h3{
-    padding-bottom: 5px;
+    font-size: 1.5rem;
 }
 
 #contact p{
     font-size: 1rem;
+}
+
+#quick_links h3{
+    font-size: 1.5rem;
 }
 
 #quick_links a{
@@ -1074,19 +1096,16 @@ footer{
     /*--------------ASIDE COLLECTION DESKTOP--------------*/
 #aside_collection_page{
     border-right: 1px solid black;
-    margin-top: 10px;
-
+    border-left: 0;
+    margin-top: 40px;
 }
 
 .season{
     flex-direction: column;
     align-items: center; 
+    overflow: visible;
 }
 
-.button_season a:hover{
-    background-color: rgb(25, 15, 3);
-    color: antiquewhite;
-}
     /*-------------- END ASIDE COLLECTION DESKTOP --------------*/
 
 
@@ -1157,6 +1176,7 @@ footer{
 }
 
 .popular_box{
+    flex-wrap: nowrap;
     padding-bottom: 10px;
     margin: 0 10px 0 10px;
 }
@@ -1166,22 +1186,27 @@ footer{
 }
 
 .img_popular{
-    margin: 10px;
+    height: 30vh;
+    width: 40vh;
 }
 
 .description_popular{
-    padding-left: 10px;
+    font-size: 1rem;
+    padding-left: 0px;
+    width: 40vh;
 }
 
 .pris_popular{
-    padding-left: 10px;
+    padding-left: 0px;
 }
     /*--------------END SECTION 1 COLLECTION DESKTOP--------------*/
 
 
     /*--------------SECTION 2 COLLECTION DESKTOP--------------*/
 
-
+#section2_collection{
+    padding-top: 20px;
+}
     /*--------------END SECTION 2 COLLECTION DESKTOP--------------*/
 
 /*--------------END COLLECTION DESKTOP
@@ -1193,9 +1218,18 @@ footer{
         grid-template-rows: 70px 40px 600px 340px;
     }
     
-    .img_gallery a img{
+    .gallery a img{
         width: 220px;
         height: 350px;
+    }
+
+    .text_gallery{
+        max-width: 45vh;
+        font-size: 1rem;
+    }
+
+    .gallery span{
+        font-size: 2rem;
     }
 /*--------------END GALLERY DESKTOP--------------*/
 
@@ -1216,6 +1250,10 @@ footer{
     
     #text_section1 h1{
         font-size: 3rem;
+    }
+
+    #text_section1 p{
+        font-size: 1.25rem;
     }
 
     /*-------------- END SECTION 1 ABOUT DESKTOP--------------*/
