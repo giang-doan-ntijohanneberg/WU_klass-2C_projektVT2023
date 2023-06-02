@@ -337,13 +337,13 @@ footer{
 #social_media h3{
     font-size: 1rem;
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 
 #social_media a{
     text-decoration: none;
     color: black;
 }
-
 
 .socialmedia_logo{
     display: flex;
@@ -463,7 +463,7 @@ footer{
     "fo fo";
 }
 
-    /*--------------ASIDE COLLECTION DESKTOP--------------*/
+    /*--------------ASIDE COLLECTION MOBIL--------------*/
 #aside_collection_page{
     grid-area: asc;
     display: flex;
@@ -793,8 +793,7 @@ footer{
         width: 100%;
     }
     
-    #text_section1 h2{
-        font-size: 2.5rem;
+    #text_section1 h1{
         margin-bottom: 15px;
     }
     
@@ -970,6 +969,10 @@ header {
     border-bottom: 2px solid black;
     font-family: 'Dancing Script', cursive;
     font-size: 1rem;
+}
+
+#social_media h3{
+    font-size: 2rem;
 }
 
 
